@@ -1,0 +1,152 @@
+body {
+	/*padding: 50px;*/
+	margin:0;
+	font: 15px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background: #191919;
+	color:#d1d1d1;
+}
+
+a {
+	color: rgb(0,100,200);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: rgb(0,80,160);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	-webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: #ccc;
+}
+
+button {
+	color: #333;
+	background-color: #f4f4f4;
+	outline: none;
+}
+
+button:disabled {
+	color: #999;
+}
+
+button:not(:disabled):active {
+	background-color: #ddd;
+}
+
+button:focus {
+	border-color: #666;
+}
+
+main{
+	max-width: 970px;
+	margin:0 auto;
+	padding: 100px 15px;
+}
+#app{
+	min-height: 500px;
+	/*background: #252525;*/
+	/*border-radius: 15px;*/
+	/*box-shadow: 0 0 5px #222;*/
+	/*padding: 20px;*/
+}
+
+.dropZone{
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.filelist img{
+	max-width: 100px;
+	display: block;
+	margin-bottom: 10px;
+}
+*{
+	box-sizing: border-box;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!ГЛОБАЛ СТАЙЛ!!!!!!!!!!!!!!!!!!!*/
+
+.but{
+	margin: 0 auto;
+	padding: 10px 15px;
+	background: #006fcb;
+	border-radius: 5px;
+	color:#d1d1d1;
+	border:none;
+	cursor: pointer;
+	text-transform: uppercase;
+	/*border:solid 1px #006fcb;*/
+	transition-duration: .2s;
+}
+.but:hover{
+	background: #004885;
+	/*border:solid 1px #004885;*/
+	/*color:#d1d1d1;*/
+	/*background: #00B358;*/
+}
+
+.but:not(:disabled):active{
+	/*background: #1e1e1e;*/
+	color:#d1d1d1;
+	background: #00B358;
+	/*box-shadow: 0 0 0 1px #00B358;*/
+}
+.but:focus{
+	box-shadow: 0 0 0 1px #d1d1d1;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.success{
+	background: #009348;
+	border: solid 1px #009348;
+	color: #d1d1d1;
+}
+
+.success:hover{
+	background: #007e3e;
+}
+.success:not(:disabled):active{
+	background: #02683e;
+}
+
+.failed{
+	background: #511919;
+	cursor: default;
+	margin: 0 auto;
+	padding: 10px 15px;
+	/*background: #006fcb;*/
+	border-radius: 5px;
+	color: #d1d1d1;
+	border: none;
+	/*cursor: pointer;*/
+	text-transform: uppercase;
+}
+
+
+.hidden{
+	display: none!important;
+}
